@@ -89,7 +89,77 @@ body.html{
 
 
 }
+.blur {
+  filter: blur(4px);
+}
 
+.brightness {
+  filter: brightness(0.30);
+}
+
+.contrast {
+  filter: contrast(180%);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.huerotate {
+  filter: hue-rotate(180deg);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.opacity {
+  filter: opacity(50%);
+}
+
+.saturate {
+  filter: saturate(7);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.shadow {
+  filter: drop-shadow(8px 8px 10px green);
+}
+.blur-light { 
+    filter: blur(2px); 
+}
+.brightness-low { 
+    filter: brightness(0.7); 
+}
+.contrast-low { 
+    filter: contrast(80%);
+ }
+.grayscale-partial { 
+    filter: grayscale(50%); 
+}
+.huerotate-180 {
+     filter: hue-rotate(180deg); 
+    }
+.invert-half {
+     filter: invert(50%); 
+    }
+.opacity-high { 
+    filter: opacity(90%); 
+}
+.saturate-low { 
+    filter: saturate(50%); 
+    filter: drop-shadow(5px 5px 8px rgb(24, 238, 195));
+}
+.sepia-light { 
+    filter: sepia(50%); 
+    filter: drop-shadow(5px 5px 8px rgb(225, 9, 128));
+}
+.shadow-blue { 
+    filter: drop-shadow(5px 5px 8px blue);
+ }
 
 .footer-container{
     height: 8vh;
@@ -361,7 +431,7 @@ body.html{
     align-items: center;
     padding: 2px;
   
-    transition:  all 1s ease-in-out;
+    
     /* display: none; */
 
    

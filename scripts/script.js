@@ -13,8 +13,23 @@ let notificationText = document.getElementById("notificationText ")
 
 
 // filter
+//*************************************************/
 
 
+let filterDivs = document.querySelectorAll('.filter-container > div');
+let targetImage = document.getElementById('img-main');
+for (let i = 0; i < filterDivs.length; i++) {
+    filterDivs[i].addEventListener('click', function () {
+        targetImage.className = 'img-main';
+        let filterClass = filterDivs[i].classList[0];
+        targetImage.classList.add(filterClass);
+
+       
+        let type = (filterClass === 'invert' || filterClass === 'grayscale' || filterClass === 'opacity') ? 'error' : 'success';
+        notification(`Applied filter: ${filterClass}`, 2000, type);
+    });
+}
+//*******************************************************/
 
 
 
