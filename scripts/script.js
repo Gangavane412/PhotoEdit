@@ -7,6 +7,46 @@ let settingMainPannel = document.getElementById("settings");
 let settingPannel = document.getElementById("setting-pannel");
 let loaderBody = document.getElementById("loader")
 
+let notificationBar = document.getElementById("notificationBar")
+let notificationText = document.getElementById("notificationText ")
+
+
+
+// filter
+
+
+
+
+
+
+
+
+// notification function 
+
+
+const notification = (text = "hello", time = 2000, type = "success") => {
+  notificationBar.style.left = "1%";
+  notificationText.innerText = text;
+
+  if (type == "success") {
+    notificationBar.style.borderRight = "10px solid green";
+  } else {
+    notificationBar.style.borderRight = "10px solid red";
+  }
+
+  setTimeout(() => {
+    notificationBar.style.left = "-100%";
+  }, time);
+};
+
+
+
+
+
+
+
+
+
 // all image control settings
 let brightness = document.getElementById("Brightness");
 let contrast = document.getElementById("Contrast");
@@ -69,6 +109,10 @@ window.addEventListener("load", () => {
         document.querySelector(".main-container").style.display = "block";
     }, 2000);
 });
+
+
+
+
 
 
 

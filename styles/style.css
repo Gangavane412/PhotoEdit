@@ -83,6 +83,14 @@ body.html{
   
 }
 
+.right-filter-container .filter-container div img{
+    height: 100%;
+    width: 150px;
+
+
+}
+
+
 .footer-container{
     height: 8vh;
     width: 86vw;
@@ -346,12 +354,16 @@ body.html{
    
     bottom:10% ;
     border-radius: 14px;
-    left: -2%;
+    left: 100%;
     border-right: 10px solid blue;
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 2px;
+  
+    transition:  all 1s ease-in-out;
+    /* display: none; */
+
    
 }
 
